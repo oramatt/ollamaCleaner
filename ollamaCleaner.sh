@@ -8,7 +8,7 @@
 # 3. Stop the model(s) from running with ollama stop
 # 4. Remove model(s) using ollama rm
 # 5. List remaining models
-# 6. Enjoy your freed up disk space
+# 6. Enjoy your freed up disk space 🤷
 
 set -euo pipefail
 
@@ -44,7 +44,7 @@ elif [[ "$doWat" == "S" ]]; then
 	echo "Disk usage before cleanup:"
     df -h /
     echo ""
-    
+
     read -rp "Enter the name of the model you want to remove: " model
 
     # Check if the model exists
@@ -71,11 +71,11 @@ echo ""
 echo "Remaining models:"
 ollama list || echo "Could not list remaining models."
 
-# Step 6: Optional disk usage report
+# Step 6: Disk usage report
 echo ""
 echo "Disk usage after cleanup:"
 df -h /
 
-# Step 7: Done
+# Step 7: Donzo
 echo ""
 echo "Cleanup complete. Disk space has been freed."
